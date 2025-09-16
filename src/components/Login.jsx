@@ -11,7 +11,8 @@ import {
 export function Login() {
   const handleGoogleSignIn = () => {
     const backendBaseUrl =
-      import.meta.env.VITE_API_BASE_URL || "http://localhost:8080";
+      import.meta.env.VITE_API_BASE_URL ||
+      "https://expensetracker-backend-br14.onrender.com";
     window.location.href = `${backendBaseUrl}/oauth2/authorization/google`;
   };
 

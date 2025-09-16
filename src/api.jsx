@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:8080", // Your backend URL
+  baseURL: "https://expensetracker-backend-br14.onrender.com", // Your backend URL
 });
 
 api.interceptors.request.use((config) => {
