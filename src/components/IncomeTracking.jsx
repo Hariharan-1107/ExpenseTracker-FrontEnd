@@ -210,7 +210,7 @@ export function IncomeTracking({ income, onAddIncome }) {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="description">Description (optional)</Label>
+                  <Label htmlFor="description">Description *</Label>
                   <Textarea
                     id="description"
                     placeholder="Enter income description..."
@@ -219,6 +219,7 @@ export function IncomeTracking({ income, onAddIncome }) {
                       handleInputChange("description", e.target.value)
                     }
                     rows={3}
+                    required
                   />
                 </div>
 
