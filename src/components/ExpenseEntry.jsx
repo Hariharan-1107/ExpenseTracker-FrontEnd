@@ -171,7 +171,7 @@ export function ExpenseEntry({ categories, onAddExpense }) {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="description">Description *</Label>
+              <Label htmlFor="description">Description (optional)</Label>
               <Textarea
                 id="description"
                 placeholder="Enter expense description..."
@@ -180,7 +180,6 @@ export function ExpenseEntry({ categories, onAddExpense }) {
                   handleInputChange("description", e.target.value)
                 }
                 rows={3}
-                required
               />
             </div>
 
